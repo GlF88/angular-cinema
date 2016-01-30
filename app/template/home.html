@@ -1,0 +1,14 @@
+
+
+<div class="col-md-9 movies">
+
+  <div class="col-md-3 movies_item" ng-repeat="names in movies">
+    <a href="/#/cart/{{$index}}"><img ng-src="{{names.img}}" alt="" />
+    {{names.name}}</a>
+    <div class="movies_item-info">
+      <span class="movies_item-info_date">({{names.date}})</span>
+      <span class="movies_item-info_rating">{{names.rating}} / 10</span>
+    </div>
+  </div>
+
+</div>
